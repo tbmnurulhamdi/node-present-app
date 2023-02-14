@@ -1,8 +1,10 @@
-var express = require('express');
-var router = express.Router();
-const controller = require("../controller/adminController")
+const express = require('express');
+const router = express.Router();
 
-/* GET home page. */
-router.get('/', controller.getUser);
+/* GET users listing. */
+router.get('/', function(req, res, next) {
+    res.send('respond with a resource');
+  });
+  
 
 module.exports = router;
